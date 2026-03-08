@@ -1,0 +1,14 @@
+# 核心深度学习
+torch>=2.0.0
+torchvision>=0.15.0
+
+# 图像处理
+Pillow>=9.0.0
+numpy>=1.23.0
+scikit-image>=0.19.0   # calc_ssim 依赖
+
+# GUI（本地演示用）
+PyQt5>=5.15.0
+
+# 可选：Colab 训练时用 basicsr 生成标准 Bicubic LR
+# basicsr>=1.4.2
