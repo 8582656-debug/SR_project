@@ -4,4 +4,5 @@ __pycache__/
 *.pyc
 checkpoints/
 results/
-data/
+data/train/      # 训练集太大，不放 GitHub
+data/test/*/LR/  # LR 用脚本生成，不放 GitHub
