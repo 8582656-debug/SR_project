@@ -53,7 +53,7 @@ def build_model_and_loss(exp: str):
 # 验证（在少量训练图上跑，本地快速检查；Colab 可接测试集）
 # ---------------------------------------------------------------------------
 @torch.no_grad()
-def quick_validate(model, loader, device, max_batches=5):
+def quick_validate(model, loader, device, max_batches=None):
     model.eval()
     meter = AverageMeter("PSNR")
     for i, (lr, hr) in enumerate(loader):
